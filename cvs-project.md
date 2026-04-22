@@ -4,6 +4,11 @@
 
 Built a scalable, HIPAA-compliant data platform on GCP to process healthcare data across claims, pharmacy, and clinical systems.
 
+## Impact
+Processed 3TB+ healthcare data
+Achieved <5s latency for streaming pipelines
+Supported 20+ production workflows
+
 ## Key Contributions
 -Designed and implemented batch + streaming ETL pipelines using Apache Beam (Cloud Dataflow) to ingest multi-format healthcare data (HL7, JSON, Avro, Parquet) from 8+ source systems.
 -Built a centralized data lake on GCS, optimized with partitioning & clustering to support efficient analytics on 3TB+ datasets
