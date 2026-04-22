@@ -9,9 +9,9 @@ Hi! I am a Data Analyst with experience at CVS, Meta, and Accenture.
 - AWS, GCP
 
 ## Projects
-- Healthcare Dashboard (CVS)
-- User Engagement Analysis (Meta)
-- Data Pipeline Optimization (Accenture)
+- [Healthcare Dashboard (CVS)](cvs-project.md)
+- User Engagement Analysis (meta-project.md)
+- Data Pipeline Optimization (accenture-project.md)
 
 ## Contact
 Email: breddyp2321@gmail.com
