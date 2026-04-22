@@ -1,21 +1,24 @@
-# User Engagement & A/B Testing Analysis (Meta)
 
-## Problem
-Product teams needed insights into user engagement and experiment performance.
 
-## Data
-- Billions of user interaction events (clicks, watch time, shares)
-- Data stored in S3, Redshift, Delta Lake
+## Real-Time Recommendation Data Pipelines (META)
+## Overview
 
-## What I Did
-- Wrote SQL queries for large-scale data analysis
-- Built feature tables using Spark (EMR)
-- Created A/B testing pipelines (CTR, retention)
-## Dashboard Overview
+Engineered large-scale data pipelines powering recommendation systems and experimentation platforms processing billions of user events daily.
 
-Built analytical reports and dashboards to track user engagement metrics like CTR, retention, and watch time. Enabled product teams to analyze trends and evaluate experiment performance.
+## Key Contributions
+-Built high-throughput batch & streaming pipelines using Spark (EMR) and Kafka to process billions of daily user interactions
+-Designed feature engineering pipelines generating model-ready datasets for recommendation systems
+-Developed low-latency data pipelines supporting near real-time inference and ranking systems
 
-## Impact
-- Supported product and ML teams
-- Reduced KPI inconsistencies by 25%
-- Enabled better recommendation system decisions
+## Engineered advanced features:
+-time-decayed engagement metrics
+-content recency scoring
+-regional user behavior aggregation
+-Optimized Delta Lake storage & S3 partitioning for efficient joins on petabyte-scale datasets
+-Built reusable ETL frameworks with schema validation, backfills, and data quality checks
+-Developed A/B testing pipelines computing metrics like CTR, retention, and engagement
+-Stored experiment results in Redshift, enabling large-scale experiment analysis
+
+## Tech Stack
+
+Apache Spark | Kafka | AWS EMR | S3 | Delta Lake | Python | Redshift
