@@ -50,12 +50,12 @@ I design and operate production-grade batch and streaming data pipelines on the 
 
 | Project | What It Demonstrates | Stack |
 | --- | --- | --- |
-| [Real-Time Streaming Pipeline](https://github.com/YOUR-USERNAME/realtime-streaming-pipeline) | Sub-5s end-to-end ingestion, exactly-once semantics, schema evolution | Kafka · Spark Structured Streaming · Delta Lake |
-| [Cloud Lakehouse with Medallion Architecture](https://github.com/YOUR-USERNAME/cloud-lakehouse-medallion) | Bronze/Silver/Gold layered lakehouse, partitioning & clustering, dbt models | BigQuery / Snowflake · dbt · Airflow · Iceberg |
-| [ML Feature & Embedding Pipeline](https://github.com/YOUR-USERNAME/ml-feature-pipeline) | Offline + online feature parity, embedding generation, vector search | Feast · pgvector · PySpark · Airflow |
-| [Data Quality & Contract Framework](https://github.com/YOUR-USERNAME/data-quality-framework) | Schema validation, drift detection, alerting, CI integration | Great Expectations · dbt tests · OpenLineage · GitHub Actions |
-| [Modern Analytics Stack Demo](https://github.com/YOUR-USERNAME/modern-analytics-stack) | End-to-end ELT, dimensional modeling, semantic layer, dashboards | dbt · BigQuery · Looker / Metabase |
-| [Infra-as-Code Data Platform](https://github.com/YOUR-USERNAME/iac-data-platform) | Reproducible cloud data infra with CI/CD on Kubernetes | Terraform · Helm · GKE · GitHub Actions |
+| [Real-Time Streaming Pipeline](https://github.com/bhargavireddy/realtime-streaming-pipeline) | Sub-5s end-to-end ingestion, exactly-once semantics, schema evolution | Kafka · Spark Structured Streaming · Delta Lake |
+| [Cloud Lakehouse with Medallion Architecture](https://github.com/bhargavireddy/cloud-lakehouse-medallion) | Bronze/Silver/Gold layered lakehouse, partitioning & clustering, dbt models | BigQuery / Snowflake · dbt · Airflow · Iceberg |
+| [ML Feature & Embedding Pipeline](https://github.com/bhargavireddy/ml-feature-pipeline) | Offline + online feature parity, embedding generation, vector search | Feast · pgvector · PySpark · Airflow |
+| [Data Quality & Contract Framework](https://github.com/bhargavireddydata-quality-framework) | Schema validation, drift detection, alerting, CI integration | Great Expectations · dbt tests · OpenLineage · GitHub Actions |
+| [Modern Analytics Stack Demo](https://github.com/bhargavireddy/modern-analytics-stack) | End-to-end ELT, dimensional modeling, semantic layer, dashboards | dbt · BigQuery · Looker / Metabase |
+| [Infra-as-Code Data Platform](https://github.com/bhargavireddy/iac-data-platform) | Reproducible cloud data infra with CI/CD on Kubernetes | Terraform · Helm · GKE · GitHub Actions |
 
 > Each repo has its own README, architecture diagram, setup steps, and a short "what I learned" note.
 
