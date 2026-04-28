@@ -1,3 +1,13 @@
+<!--
+  HOW TO USE THIS FILE
+  --------------------
+  1. Replace the placeholders YOUR-USERNAME and YOUR-LINKEDIN with your real handles.
+  2. If all your project files are inside ONE repo (the GitHub Pages setup),
+     leave the project links as ./Project_X_*.md (relative links).
+     If each project is its own repo, switch back to the
+     https://github.com/YOUR-USERNAME/<repo-name> form.
+  3. Paste this entire file as Readme.md (or README.md) and commit.
+-->
 
 <h1 align="center">Hi, I'm Bhargavi Reddy P</h1>
 
@@ -46,18 +56,67 @@ I design and operate production-grade batch and streaming data pipelines on the 
 
 ---
 
+### Experience
+
+#### CVS Health — Data & ML Platform Engineer
+*Mar 2025 – Present*
+
+- Architected end-to-end batch and streaming pipelines on GCP (Cloud Dataflow / Apache Beam, Cloud Functions, Cloud Workflows, Cloud Composer) ingesting 3+ TB across 8+ source systems in regulated healthcare data domains
+- Designed an enterprise lakehouse on GCS with Dataplex, Data Catalog, and Iceberg-style medallion architecture; partitioning + clustering improved downstream BigQuery query efficiency ~35%
+- Built real-time ingestion using Pub/Sub, Dataflow Streaming, Apache Kafka, and Spark Structured Streaming achieving sub-5-second end-to-end latency across 20+ SLA-bound workflows
+- Partnered with ML and data science teams to ship training, evaluation, and feature datasets — with dataset versioning (Delta Lake time travel + LakeFS), lineage (OpenLineage), and full reproducibility
+- Stood up a feature store on Vertex AI Feature Store and a vector database (pgvector / Pinecone) for embedding storage powering retrieval-augmented search and model evaluation
+- Implemented a data quality framework (Great Expectations, dbt tests, Dataplex) with schema validation, drift detection, and anomaly alerting — cutting downstream incidents by ~40%
+- Migrated legacy SQL Server / Oracle / SSIS workflows to GCP-native services (Dataflow, Data Fusion, BigQuery, dbt), reducing operational cost ~30%
+- Modeled semantic layers in dbt and LookML using Kimball dimensional modeling, enabling self-serve analytics in Looker, Tableau, and Power BI for 50+ stakeholders
+- Enforced HIPAA-compliant governance with IAM, BigQuery column-level security, KMS encryption, RBAC, masking, and tokenization
+- Deployed pipelines and infra as code (Terraform, Helm, GitHub Actions on GKE) with full CI/CD and test automation across dev/staging/prod
+- Built an internal self-serve data portal so ML engineers and analysts can discover and request datasets independently — cutting data request turnaround by ~50%
+
+> **Stack:** GCP (BigQuery, Dataflow, Dataproc, Pub/Sub, Composer, Dataplex, Vertex AI, GKE), Snowflake, Spark, PySpark, Kafka, Flink, dbt, Airflow, Looker, Great Expectations, Monte Carlo, OpenLineage, Pinecone, pgvector, Terraform, Helm, GitHub Actions
+
+#### Meta — Data Engineer, ML & Recommendation Systems
+*Aug 2024 – Feb 2025*
+
+- Designed high-throughput batch and streaming pipelines on AWS EMR + Apache Spark and Kafka + Kafka Streams, processing 500B+ daily user interaction events for recommendation and ranking
+- Built petabyte-scale feature engineering pipelines using PySpark on EMR and Ray on EKS, transforming raw behavioral and multimodal signals into denormalized, model-ready Delta Lake datasets on S3
+- Translated ML model requirements into production training data pipelines, dataset versioning, and evaluation datasets with end-to-end lineage and reproducibility guarantees
+- Engineered a Feast-based feature store and embedding pipelines backed by a vector database (Weaviate / pgvector) for similarity search and candidate generation at scale
+- Developed reusable Spark ETL frameworks with schema enforcement, schema evolution, CDC, and backfills orchestrated via Dataswarm / Airflow — reducing inconsistencies in recommendation datasets
+- Built experimentation pipelines for large-scale A/B testing — CTR, retention, watch-time metrics — managing exposure logging and attribution in Redshift and dbt for reproducible analysis
+- Implemented dataset discovery tooling and an internal self-serve catalog used by ML researchers
+- Enforced privacy controls around sensitive behavioral and conversational data using access controls, masking, and RBAC aligned with GDPR and internal frameworks
+
+> **Stack:** Spark, PySpark, Ray, Kafka, Kafka Streams, AWS EMR / S3 / EKS, Delta Lake, Redshift, dbt, Airflow, Dataswarm, Feast, Weaviate, pgvector, Python, Docker, Kubernetes, Terraform
+
+#### Accenture — Data Engineer, Cloud Migration & Warehouse Modernization
+*Feb 2021 – Jul 2023*
+
+- Built scalable ETL pipelines with AWS Glue, PySpark, and Apache Airflow ingesting patient claims, EHR, lab, and pharmacy data from 10+ sources into AWS Redshift — improving analytics readiness by ~35%
+- Led a 3+ TB migration of sensitive data from on-premise Oracle and SQL Server to AWS Redshift; partition / distribution / sort-key tuning improved query performance ~45% for population-health analytics
+- Designed dimensional models (star and snowflake) and a Kimball-style warehouse with conformed dimensions, SCD2, and fact tables supporting reimbursement and clinical operations reporting
+- Reduced duplicate records by ~40% using Python (Pandas) and SQL deduplication; added dbt tests + Great Expectations for schema validation and quality
+- Automated batch and incremental loads with Airflow + Bash on Linux, replacing manual refresh and cutting job runtime ~28%
+- Built CI/CD with Git, Bitbucket, Jenkins, and Docker; integrated AWS CloudWatch for observability and alerting
+- Operated in Agile/Scrum/Kanban using JIRA — defect management, status reporting, risk/issue tracking, business stakeholder reviews and sign-off
+- Mentored 4+ junior engineers on SQL optimization, distributed systems, and pipeline best practices; authored runbooks, design docs, and Confluence knowledge bases
+
+> **Stack:** AWS (Glue, Redshift, S3, CloudWatch, IAM, EC2, EKS), PySpark, Airflow, Python, SQL, Oracle, SQL Server, PostgreSQL, dbt, Great Expectations, Git, Bitbucket, Docker, Kubernetes, Jenkins, JIRA, Confluence
+
+---
+
 ### Featured Projects
 
 | Project | What It Demonstrates | Stack |
 | --- | --- | --- |
-| [Real-Time Streaming Pipeline](project_1_Real-time-streaming-pipeline.md) | Sub-5s end-to-end ingestion, exactly-once semantics, schema evolution | Kafka · Spark Structured Streaming · Delta Lake |
-| [Cloud Lakehouse with Medallion Architecture](https://github.com/bhargavireddy/cloud-lakehouse-medallion) | Bronze/Silver/Gold layered lakehouse, partitioning & clustering, dbt models | BigQuery / Snowflake · dbt · Airflow · Iceberg |
-| [ML Feature & Embedding Pipeline](https://github.com/bhargavireddy/ml-feature-pipeline) | Offline + online feature parity, embedding generation, vector search | Feast · pgvector · PySpark · Airflow |
-| [Data Quality & Contract Framework](https://github.com/bhargavireddydata-quality-framework) | Schema validation, drift detection, alerting, CI integration | Great Expectations · dbt tests · OpenLineage · GitHub Actions |
-| [Modern Analytics Stack Demo](https://github.com/bhargavireddy/modern-analytics-stack) | End-to-end ELT, dimensional modeling, semantic layer, dashboards | dbt · BigQuery · Looker / Metabase |
-| [Infra-as-Code Data Platform](https://github.com/bhargavireddy/iac-data-platform) | Reproducible cloud data infra with CI/CD on Kubernetes | Terraform · Helm · GKE · GitHub Actions |
+| [Real-Time Streaming Pipeline](./Project_1_Real-time_Streaming_Pipeline.md) | Sub-5s end-to-end ingestion, exactly-once semantics, schema evolution | Kafka · Spark Structured Streaming · Delta Lake |
+| [Cloud Lakehouse with Medallion Architecture](./Project_2_cloud_lakehouse_with_medallion_architecture.md) | Bronze/Silver/Gold layered lakehouse, partitioning & clustering, dbt models | BigQuery / Snowflake · dbt · Airflow · Iceberg |
+| [ML Feature & Embedding Pipeline](./Project_3_ML_Feature_and_Embedding_Pipeline.md) | Offline + online feature parity, embedding generation, vector search | Feast · pgvector · PySpark · Airflow |
+| [Data Quality & Contract Framework](./Project_4_Data_Quality_and_Contract_Framework.md) | Schema validation, drift detection, alerting, CI integration | Great Expectations · dbt tests · OpenLineage · GitHub Actions |
+| [Modern Analytics Stack Demo](./Project_5_Modern_Analytics_Stack_Demo.md) | End-to-end ELT, dimensional modeling, semantic layer, dashboards | dbt · BigQuery · Looker / Metabase |
+| [Infra-as-Code Data Platform](./Project_6_Infrastructure_as_Code_Data_Platform.md) | Reproducible cloud data infra with CI/CD on Kubernetes | Terraform · Helm · GKE · GitHub Actions |
 
-> Each repo has its own README, architecture diagram, setup steps, and a short "what I learned" note.
+> Each project file has its own architecture, setup steps, and a short "what I learned" note.
 
 ---
 
@@ -80,11 +139,17 @@ I design and operate production-grade batch and streaming data pipelines on the 
 
 ---
 
+### Education
+
+**Master of Science, Computer Engineering** — University of Bridgeport, USA *(Sep 2023 – May 2025, GPA 3.3 / 4.0)*
+
+Coursework: Cloud Computing, Deep Learning, Reinforcement Learning, Cryptography, Cybersecurity, Data & Computer Communication, Python for Data Science.
+
 ### Certifications
 
-- Google Cloud Professional Data Engineer
-- Snowflake SnowPro Core
-- AWS Certified Data Analytics – Specialty *(in progress)*
+- Google Cloud **Professional Data Engineer**
+- Snowflake **SnowPro Core**
+- AWS **Certified Data Analytics – Specialty** *(in progress)*
 
 ---
 
