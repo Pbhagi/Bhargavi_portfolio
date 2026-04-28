@@ -109,7 +109,7 @@ I design and operate production-grade batch and streaming data pipelines on the 
 
 | Project | What It Demonstrates | Stack |
 | --- | --- | --- |
-| [Real-Time Streaming Pipeline](./Project_1_Real-time_Streaming_Pipeline.md) | Sub-5s end-to-end ingestion, exactly-once semantics, schema evolution | Kafka · Spark Structured Streaming · Delta Lake |
+| [Real-Time Streaming Pipeline](./Project_1_Real-time_streaming_pipeline.md) | Sub-5s end-to-end ingestion, exactly-once semantics, schema evolution | Kafka · Spark Structured Streaming · Delta Lake |
 | [Cloud Lakehouse with Medallion Architecture](./Project_2_cloud_lakehouse_with_medallion_architecture.md) | Bronze/Silver/Gold layered lakehouse, partitioning & clustering, dbt models | BigQuery / Snowflake · dbt · Airflow · Iceberg |
 | [ML Feature & Embedding Pipeline](./Project_3_ML_Feature_and_Embedding_Pipeline.md) | Offline + online feature parity, embedding generation, vector search | Feast · pgvector · PySpark · Airflow |
 | [Data Quality & Contract Framework](./Project_4_Data_Quality_and_Contract_Framework.md) | Schema validation, drift detection, alerting, CI integration | Great Expectations · dbt tests · OpenLineage · GitHub Actions |
